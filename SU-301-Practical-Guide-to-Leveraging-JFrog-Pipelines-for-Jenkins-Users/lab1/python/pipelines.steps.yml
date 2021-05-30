@@ -26,7 +26,7 @@ pipelines:
                 ## remove the longest string matching "*/" starting from the left
                 sourceRepository: ${dockerRepo##*/}
           inputResources:
-            - name: lab10_src_code_webapp_python
+            - name: lab1_src_code_webapp_python
           outputResources:
             - name: lab1_bi_webapp_python
           integrations:
@@ -50,7 +50,7 @@ pipelines:
         configuration:
           failOnScan: false
           inputResources:
-            - name: lab1_bi_webapp_anaconda
+            - name: lab1_bi_webapp_python
               trigger: true
 
       - name: lab1_promote_bi_webapp_python
