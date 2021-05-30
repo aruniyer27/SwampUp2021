@@ -31,7 +31,6 @@ pipelines:
             - name: lab1_bi_webapp_python
           integrations:
             - name: artifactory_eu
-          execution:
           onStart:
             - jfrog --version 
             - cd ${res_lab1_src_code_webapp_python_resourcePath}/${trainingPath}/src/python && ls -l
