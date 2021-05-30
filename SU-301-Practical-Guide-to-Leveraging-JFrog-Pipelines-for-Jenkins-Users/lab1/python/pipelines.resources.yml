@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: my_github
-      path: cyan21/SwampUp2021
+      path: aruniyer27/SwampUp2021
       branches:
         include: {{ gitBranch }}
       files:
