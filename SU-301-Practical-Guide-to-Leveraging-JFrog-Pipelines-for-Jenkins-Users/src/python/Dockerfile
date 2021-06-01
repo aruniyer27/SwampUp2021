@@ -4,7 +4,7 @@ WORKDIR  /var/opt/webapp
 
 RUN mkdir -p /var/opt/webapp
 ADD webapp_python.tar.gz . 
-RUN pip config set global.index-url https://swampup301.jfrog.io/artifactory/api/pypi/urs-python/simple && \
+RUN pip config set global.index-url https://arunkg27.jfrog.io/artifactory/api/pypi/urs-python/simple && \
     pip install -r requirements.txt
 
 EXPOSE 8080

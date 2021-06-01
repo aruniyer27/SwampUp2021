@@ -1,8 +1,13 @@
 #!/bin/bash
 
 
-#JPD_URL=https://swampup301.jfrog.io
+JPD_URL=https://arunkg27.jfrog.io
 BUILD_NAMES=backapp_mvn
+ADMIN_USER=arunkg@jfrog.com
+ADMIN_PASS=AKCp8jQTUtjZxXUgFmsohF2WrHuQAnvFwXkktvGxRBMzzcPrWeoJGrDQpsUeXSN4GkqU4ba59
+PIPE_TOKEN=eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJOZ0hzZXJFYkNULWtObjE5SHgzYVdhZjE5YUJRSlhheHBvNWVLeDRMSVVFIn0.eyJzdWIiOiJqZmZlQDAwMFwvdXNlcnNcL2FydW5rZ0BqZnJvZy5jb20iLCJzY3AiOiJhcHBsaWVkLXBlcm1pc3Npb25zXC9hZG1pbiIsImF1ZCI6ImpmcGlwQCoiLCJpc3MiOiJqZmZlQDAwMCIsImlhdCI6MTYyMjM5MjU3NywianRpIjoiYTA4ZWE2ZGUtNmRmNy00ZDYyLTgxY2QtYzFiZmJjM2U5ZTYyIn0.RQRprYPZ2tehBzoRN-a7rV-agGjd4bE_xWYpCW5agTR8CqRA-fcW48e5bpiRldgUPwiblm9O-qH8tABaTMssQoJINx-icvN3udq9Qb578HfmNRmjmMPfwwhMtMkK4I8WY8QxLz-7dl_Ktc1fYF-lwNbGc4RNGKPy8kvuU8E0wHXt4dZpoFbrWC3yiYbaKxmLWWIzAqMSckzMAdePDs3ymUrLLXUzVaOGZi5urwaI29jkjxfD_MTCyVnYJM0_rlchs5PqemoC1p3KjYBCuy4kWxHVim-DBHxLocL3Hc4jjhlVMl7jP8B1vrA_BEWyYhouu61CJQrH2YD9YtjI05yCJg
+RT_USER=arun
+
 
 if [ -z "$JPD_URL" ]
 then
@@ -13,7 +18,7 @@ fi
 if [ -z "$ADMIN_USER" ]
 then
      echo "No user. Default : admin user"
-     ADMIN_USER=admin
+     ADMIN_USER=arukg@jfrog.com
 fi
 
 if [ -z "$ADMIN_PASS" ]
