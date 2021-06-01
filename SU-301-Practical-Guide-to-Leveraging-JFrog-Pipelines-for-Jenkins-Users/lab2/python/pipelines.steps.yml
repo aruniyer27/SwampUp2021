@@ -4,7 +4,7 @@ pipelines:
       environmentVariables:
         readOnly:
           trainingPath: SU-301-Practical-Guide-to-Leveraging-JFrog-Pipelines-for-Jenkins-Users
-          dockerRepo: swampup301.jfrog.io/urs-docker
+          dockerRepo: arunkg27.jfrog.io/urs-docker
           pythonRepo: urs-python
           genericRepo: urs-generic
           genericPromotionRepo: urs-generic-release-local
