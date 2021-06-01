@@ -116,7 +116,7 @@ pipelines:
             - name: lab2_fs_webapp_python
           integrations:
             - name: artifactory_eu
-            - name: artifactory_docker
+   #         - name: artifactory_docker
         execution:
           onStart:
             - ls -la ${res_lab2_fs_webapp_python_resourcePath}
