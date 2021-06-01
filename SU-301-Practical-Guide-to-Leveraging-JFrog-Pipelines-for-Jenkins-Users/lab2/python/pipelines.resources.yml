@@ -48,7 +48,7 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: artifactory_eu
-      pattern: "urs-generic/*.tar.gz"
+      pattern: "urs-generic-release-local/*.tar.gz"
       props: "vcs.revision=${runVarAppVersion}"
       flat: true
       
