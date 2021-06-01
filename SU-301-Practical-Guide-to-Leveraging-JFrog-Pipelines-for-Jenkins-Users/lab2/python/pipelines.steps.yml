@@ -49,7 +49,7 @@ pipelines:
               if [ ${res_lab2_src_code_webapp_python_isGitTag} == 'True' ]; then 
                 add_run_variables runVarAppVersion=${res_lab2_src_code_webapp_python_gitTagName}
               else
-                add_run_variables runVarAppVersion=${res_lab2_src_code_webapp_python_commitSha2048}
+                add_run_variables runVarAppVersion=${res_lab2_src_code_webapp_python_commitSha}
               fi
             - echo ${runVarAppVersion}
 
@@ -106,7 +106,7 @@ pipelines:
             JFROG_CLI_LOG_LEVEL: INFO
           affinityGroup: together
           dockerFileName: Dockerfile
-          dockerFileLocation: src/lab3/python/
+          dockerFileLocation: src/lab2/python/
           dockerImageName: ${dockerRepo}/webapp-python-docker
           dockerImageTag: ${runVarAppVersion}
           inputSteps:
@@ -116,7 +116,7 @@ pipelines:
             - name: lab2_fs_webapp_python
           integrations:
             - name: artifactory_eu
-#            - name: artifactory_docker
+            - name: artifactory_docker
         execution:
           onStart:
             - ls -la ${res_lab2_fs_webapp_python_resourcePath}
